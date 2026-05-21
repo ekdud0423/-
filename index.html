@@ -6,11 +6,7 @@
     <title>디딤 프로젝트</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             background: #111;
@@ -26,7 +22,6 @@
             padding: 30px 20px 22px;
             text-align: center;
         }
-
         .header img.main-logo {
             width: 240px;
             max-width: 80%;
@@ -36,20 +31,13 @@
             margin-right: auto;
         }
 
-        .header-sub {
-            font-size: 12.5px;
-            color: #888;
-            letter-spacing: 0.3px;
-        }
-
-        /* ── 소개 (흰 배경) ── */
+        /* ── 소개 ── */
         .intro-section {
             background: #fff;
             color: #222;
             padding: 44px 26px 36px;
             text-align: center;
         }
-
         .sec-title-black {
             font-family: 'Noto Serif KR', serif;
             font-size: 22px;
@@ -57,7 +45,6 @@
             color: #111;
             margin-bottom: 24px;
         }
-
         .intro-text {
             font-size: 13px;
             color: #555;
@@ -65,7 +52,6 @@
             text-align: left;
             word-break: keep-all;
         }
-
         .intro-cta {
             margin-top: 28px;
             font-size: 16px;
@@ -76,210 +62,96 @@
             text-align: center;
         }
 
-        /* ── 후원 혜택 (짙은 파랑) ── */
-    /* ───────────────── */
-/* 후원 섹션 */
-/* ───────────────── */
+        /* ── 후원 섹션 ── */
+        .sponsor-wrap {
+            background: #101b46;
+            padding: 44px 18px 40px;
+        }
+        .sec-title-white {
+            text-align: center;
+            color: #fff;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 28px;
+            font-family: 'Noto Serif KR', serif;
+        }
 
-.sponsor-wrap{
-  background:#101b46;
-  padding:44px 18px 40px;
-}
+        /* ── 후원 계좌 카드 ── */
+        .support-box {
+            margin-top: 24px;
+            background: #fff;
+            border-radius: 24px;
+            padding: 28px 22px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        .support-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #3A9AFF;
+            margin-bottom: 18px;
+        }
+        .support-account {
+            font-size: 16px;
+            line-height: 2;
+            color: #222;
+            font-weight: 500;
+        }
+        .support-divider {
+            height: 1px;
+            background: #ddd;
+            margin: 24px 0;
+        }
+        .tier-note {
+            font-size: 14px;
+            line-height: 2;
+            color: #555;
+            word-break: keep-all;
+        }
+        .support-btn {
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 62px;
+            background: #3A9AFF;
+            color: #fff;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(58,154,255,0.35);
+            transition: 0.2s ease;
+        }
+        .support-btn:hover { transform: translateY(-2px); }
+        .support-btn:active { transform: translateY(1px); }
 
-.sec-title-white{
-  text-align:center;
-  color:#fff;
-  font-size:22px;
-  font-weight:700;
-  margin-bottom:28px;
-  font-family:'Noto Serif KR',serif;
-}
-
-/* 카드 영역 */
-<div style="text-align:center;">
-  <img 
-    src="https://raw.githubusercontent.com/ekdud0423/ddimgo/main/Frame_274.png" 
-    style="width:100%; max-width:460px; border-radius:16px;"
-    alt="후원 혜택 안내"
-  >
-</div>
-
-
-/* 후원 카드 */
-
-.support-box{
-  margin-top:24px;
-  background:#fff;
-  border-radius:24px;
-  padding:28px 22px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.15);
-  text-align:center;
-}
-
-.support-title{
-  font-size:20px;
-  font-weight:700;
-  color:#3A9AFF;
-  margin-bottom:18px;
-}
-
-.support-account{
-  font-size:16px;
-  line-height:2;
-  color:#222;
-  font-weight:500;
-}
-
-.support-divider{
-  height:1px;
-  background:#ddd;
-  margin:24px 0;
-}
-
-.tier-note{
-  font-size:14px;
-  line-height:2;
-  color:#555;
-  word-break:keep-all;
-}
-
-/* 버튼 */
-
-.support-btn{
-  margin-top:28px;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  width:100%;
-  height:62px;
-
-  background:#3A9AFF;
-  color:#fff;
-
-  border-radius:16px;
-
-  font-size:18px;
-  font-weight:700;
-
-  text-decoration:none;
-
-  box-shadow:0 8px 20px rgba(58,154,255,0.35);
-
-  transition:0.2s ease;
-}
-
-.support-btn:hover{
-  transform:translateY(-2px);
-}
-
-.support-btn:active{
-  transform:translateY(1px);
-}
-
-/* 🔥 추가 : 카드 3개 가로 정렬 */
-
-.tier-wrap{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  align-items:stretch;
-}
-
-/* 카드 */
-
-.tier-card{
-  overflow:hidden;
-  border-radius:20px;
-  background:#fff;
-  box-shadow:0 10px 30px rgba(0,0,0,0.15);
-}
-
-/* 상단 파란 영역 */
-
-.tier-top{
-  background:linear-gradient(180deg,#6fa8ff 0%, #4f86ff 100%);
-  padding:18px 12px 22px;
-  text-align:center;
-}
-
-.tier-badge{
-  display:inline-block;
-  padding:5px 14px;
-  border:1px solid rgba(255,255,255,0.6);
-  border-radius:999px;
-  color:#fff;
-  font-size:11px;
-  margin-bottom:14px;
-}
-
-.tier-price{
-  color:#fff;
-  font-size: 20px;
-  font-weight:800;
-  line-height:1.2;
-}
-
-/* 카드 본문 */
-
-.tier-body{
-  padding:18px 14px 20px;
-}
-
-.tier-item{
-  font-size:12px;
-  line-height:1.7;
-  color:#222;
-  margin-bottom:10px;
-  word-break:keep-all;
-}
-
-.tier-desc{
-  text-align:center;
-  font-size:10px;
-  color:#555;
-  margin-bottom:14px;
-}
-
-.tier-line{
-  height:1px;
-  background:#ddd;
-  margin-bottom:16px;
-}
-
-        /* ── 백일몽 (검정) ── */
+        /* ── 백일몽 ── */
         .baek-wrap {
             background: #0c0c18;
             padding: 44px 24px 40px;
             text-align: center;
         }
-
         .baek-logo-img {
             width: 160px;
             max-width: 70%;
             margin-bottom: 28px;
         }
-
         .baek-body {
             font-size: 14px;
             color: #aaa;
             line-height: 2.3;
             word-break: keep-all;
         }
+        .baek-body b { color: #ddd; font-weight: 500; }
 
-        .baek-body b {
-            color: #ddd;
-            font-weight: 500;
-        }
-
-        /* ── 공연사진 (흰 배경) ── */
+        /* ── 공연사진 ── */
         .photo-wrap {
             background: #fff;
             color: #111;
             padding: 38px 20px;
         }
-
         .photo-main-title {
             font-size: 19px;
             font-weight: 700;
@@ -288,11 +160,7 @@
             margin-bottom: 28px;
             font-family: 'Noto Serif KR', serif;
         }
-
-        .photo-group {
-            margin-bottom: 24px;
-        }
-
+        .photo-group { margin-bottom: 24px; }
         .photo-label {
             font-size: 13px;
             font-weight: 700;
@@ -301,13 +169,11 @@
             padding-bottom: 5px;
             border-bottom: 1.5px solid #111;
         }
-
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 5px;
         }
-
         .photo-cell {
             aspect-ratio: 1;
             background: #ccc;
@@ -319,14 +185,9 @@
             color: #888;
             overflow: hidden;
         }
+        .photo-cell img { width: 100%; height: 100%; object-fit: cover; }
 
-        .photo-cell img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* ── SNS 바 ── */
+        /* ── SNS ── */
         .sns-wrap {
             background: #111;
             padding: 16px 20px;
@@ -335,7 +196,6 @@
             gap: 20px;
             flex-wrap: wrap;
         }
-
         .sns-link {
             display: flex;
             align-items: center;
@@ -344,7 +204,6 @@
             color: #ccc;
             text-decoration: none;
         }
-
         .sns-ico {
             width: 28px;
             height: 28px;
@@ -356,23 +215,16 @@
             flex-shrink: 0;
             color: white;
         }
+        .ig-ico { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .yt-ico { background: #ff0000; }
 
-        .ig-ico {
-            background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-        }
-
-        .yt-ico {
-            background: #ff0000;
-        }
-
-        /* ── 후원자 명단 (흰 배경) ── */
+        /* ── 후원자 명단 ── */
         .donor-wrap {
             background: #fff;
             color: #111;
             padding: 50px 24px 56px;
             text-align: center;
         }
-
         .donor-title {
             font-family: 'Noto Serif KR', serif;
             font-size: 23px;
@@ -380,22 +232,12 @@
             margin-bottom: 28px;
             color: #111;
         }
-
-        .donor-body {
-            font-size: 14px;
-            color: #444;
-            line-height: 2.1;
-        }
-
-        .donor-sign {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #222;
-            font-weight: 600;
-        }
+        .donor-body { font-size: 14px; color: #444; line-height: 2.1; }
+        .donor-sign { margin-top: 20px; font-size: 14px; color: #222; font-weight: 600; }
     </style>
 </head>
 <body>
+
     <!-- 헤더 -->
     <div class="header">
         <img class="main-logo" src="https://raw.githubusercontent.com/ekdud0423/ddimgo/main/%EB%94%94%EB%94%A4%EB%A1%9C%EA%B3%A0%ED%9D%B0.png">
@@ -416,50 +258,39 @@
         </div>
     </div>
 
-  <!-- 후원 혜택 카드형 UI -->
-<div class="sponsor-wrap">
+    <!-- 후원 혜택 -->
+    <div class="sponsor-wrap">
+        <div class="sec-title-white">✶ 디딤프로젝트 후원 혜택 안내 ✶</div>
 
-<div style="text-align:center;">
-  <img 
-    src="https://raw.githubusercontent.com/ekdud0423/-/main/Frame%20277.png" 
-    style="width:100%; max-width:460px; border-radius:16px;"
-    alt="후원 혜택 안내"
-  >
-</div>
+        <div style="text-align:center;">
+            <img
+                src="https://raw.githubusercontent.com/ekdud0423/-/main/Frame%20277.png"
+                style="width:100%; max-width:460px; border-radius:16px;"
+                alt="후원 혜택 안내"
+            >
+        </div>
 
-  <!-- 후원 정보 카드 -->
-  <div class="support-box">
-
-    <div class="support-title">
-      ✶ 후원 계좌 ✶
+        <!-- 후원 계좌 카드 -->
+        <div class="support-box">
+            <div class="support-title">✶ 후원 계좌 ✶</div>
+            <div class="support-account">
+                토스뱅크 1002-4334-5444<br>
+                예금주 : 이다영<br>
+                문의 : 010-6743-0108
+            </div>
+            <div class="support-divider"></div>
+            <div class="tier-note">
+                입금 후, 혜택 안내를 위해<br>
+                <b>구글 폼 작성</b>을 해주시기 바랍니다.<br><br>
+                폼 작성을 하지 않으실 경우,<br>
+                정확한 후원자 정보를 파악하기 어려워<br>
+                추후 안내 연락과 혜택 제공이 어려울 수 있습니다.
+            </div>
+            <a href="https://naver.me/GNJvjI2A" target="_blank" class="support-btn">
+                후원자 정보 등록하기
+            </a>
+        </div>
     </div>
-
-    <div class="support-account">
-      토스뱅크 1002-4334-5444<br>
-      예금주 : 이다영<br>
-      문의 : 010-6743-0108
-    </div>
-
-    <div class="support-divider"></div>
-
-    <div class="tier-note">
-      입금 후, 혜택 안내를 위해<br>
-      <b>구글 폼 작성</b>을 해주시기 바랍니다.<br><br>
-
-      폼 작성을 하지 않으실 경우,<br>
-      정확한 후원자 정보를 파악하기 어려워<br>
-      추후 안내 연락과 혜택 제공이 어려울 수 있습니다.
-    </div>
-
-    <!-- 버튼 -->
-    <a href="https://naver.me/GNJvjI2A"
-       target="_blank"
-       class="support-btn">
-      후원자 정보 등록하기
-    </a>
-
-  </div>
-</div>
 
     <!-- 백일몽 -->
     <div class="baek-wrap">
@@ -531,5 +362,6 @@
             백일몽 일동
         </div>
     </div>
+
 </body>
 </html>
