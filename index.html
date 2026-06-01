@@ -16,7 +16,6 @@
             margin: 0 auto;
         }
 
-        /* ── 헤더 ── */
         .header {
             background: #28246B;
             padding: 30px 20px 22px;
@@ -31,7 +30,6 @@
             margin-right: auto;
         }
 
-        /* ── 소개 ── */
         .intro-section {
             background: #fff;
             color: #222;
@@ -62,7 +60,6 @@
             text-align: center;
         }
 
-        /* ── 후원 섹션 ── */
         .sponsor-wrap {
             background: #101b46;
             padding: 44px 18px 40px;
@@ -76,7 +73,6 @@
             font-family: 'Noto Serif KR', serif;
         }
 
-        /* ── 후원 계좌 카드 ── */
         .support-box {
             margin-top: 24px;
             background: #fff;
@@ -127,7 +123,6 @@
         .support-btn:hover { transform: translateY(-2px); }
         .support-btn:active { transform: translateY(1px); }
 
-        /* ── 백일몽 ── */
         .baek-wrap {
             background: #0c0c18;
             padding: 44px 24px 40px;
@@ -146,7 +141,6 @@
         }
         .baek-body b { color: #ddd; font-weight: 500; }
 
-        /* ── 공연사진 ── */
         .photo-wrap {
             background: #fff;
             color: #111;
@@ -171,23 +165,22 @@
         }
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 5px;
         }
         .photo-cell {
-            aspect-ratio: 1;
-            background: #ccc;
+            aspect-ratio: 16/10;
+            background: #eee;
             border-radius: 3px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            color: #888;
             overflow: hidden;
         }
-        .photo-cell img { width: 100%; height: 100%; object-fit: cover; }
+        .photo-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
-        /* ── SNS ── */
         .sns-wrap {
             background: #111;
             padding: 16px 20px;
@@ -218,7 +211,6 @@
         .ig-ico { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .yt-ico { background: #ff0000; }
 
-        /* ── 후원자 명단 ── */
         .donor-wrap {
             background: #fff;
             color: #111;
@@ -310,31 +302,64 @@
         </div>
     </div>
 
-    <!-- 공연/연습 사진 -->
+    <!-- 연습 사진 -->
     <div class="photo-wrap">
         <div class="photo-main-title">연습 사진</div>
+
+        <!-- 극단 새김 -->
         <div class="photo-group">
             <div class="photo-label">극단 새김</div>
             <div class="photo-grid">
-                <div class="photo-cell">📷</div>
-                <div class="photo-cell">📷</div>
-                <div class="photo-cell">📷</div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EC%83%88%EA%B9%801.png" alt="새김1">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EC%83%88%EA%B9%802.png" alt="새김2">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EC%83%88%EA%B9%803.png" alt="새김3">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EC%83%88%EA%B9%804.png" alt="새김4">
+                </div>
             </div>
         </div>
+
+        <!-- 극단 미모 -->
         <div class="photo-group">
             <div class="photo-label">극단 미모</div>
             <div class="photo-grid">
-                <div class="photo-cell">📷</div>
-                <div class="photo-cell">📷</div>
-                <div class="photo-cell">📷</div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EB%AF%B8%EB%AA%A81.png" alt="미모1">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EB%AF%B8%EB%AA%A82.png" alt="미모2">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EB%AF%B8%EB%AA%A83.png" alt="미모3">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EB%AF%B8%EB%AA%A84.png" alt="미모4">
+                </div>
             </div>
         </div>
+
+        <!-- 극단 백일몽 -->
         <div class="photo-group" style="margin-bottom:0">
             <div class="photo-label">극단 백일몽</div>
             <div class="photo-grid">
-                <div class="photo-cell">📷</div>
-                <div class="photo-cell">📷</div>
-                <div class="photo-cell">📷</div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EB%B0%B1%EC%9D%BC%EB%AA%BD1.png" alt="백일몽1">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EB%B0%B1%EC%9D%BC%EB%AA%BD2.png" alt="백일몽2">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EB%B0%B1%EC%9D%BC%EB%AA%BD3.png" alt="백일몽3">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://raw.githubusercontent.com/ekdud0423/-/main/%EB%B0%B1%EC%9D%BC%EB%AA%BD4.png" alt="백일몽4">
+                </div>
             </div>
         </div>
     </div>
